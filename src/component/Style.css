@@ -1,0 +1,84 @@
+.App {
+    width: 100%;
+    background: #5c5874c9;
+    position: absolute;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    transition: opacity 500ms ease-in;
+    box-shadow:  0 4px 8px 0 rgba(228, 220, 220, 0.342), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#namefont{
+    font-family: 'Agustina Regular';
+    /* font-size: 20px; */
+    /* padding: 0px 20px; */
+    color: beige;
+}
+.headerName {
+    font-size: 20px;
+    padding: 0px 20px;
+    color: beige;
+}
+
+.logoName {
+    /* display: block; */
+    /* float: left; */
+    font-size: 1.6em;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+    cursor: pointer;
+    
+}
+
+.rightSide {
+    display: flex;
+    padding-right: 10px;
+}
+
+.menuLine{
+    display: none;
+    padding-right: 0px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+
+@media(max-width: 980px) {
+    .App {
+        width: 100%;
+        background: #5c5874c9;
+        position: absolute;
+        display: table-column;
+        /* justify-content: right; */
+        transition: opacity 500ms ease-in
+    }
+    .headerName {
+        font-size: 20px;
+        padding: 0px 20px;
+        color: beige;
+    }
+    .rightSide {
+        display: none;
+        padding-right: 0px;
+    }
+
+    .menuLine{
+        display: inline;
+        padding-right: 0px;
+    }
+    
+    .menuIcon {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        margin: 16px 20px 0px 0px;
+        height: 34px;
+        width: 36px;
+        cursor: pointer;
+    }
+}
