@@ -1,17 +1,13 @@
 .App {
     width: 100%;
     background: #5c5874c9;
-    position: absolute;
+    /* position: absolute; */
     opacity: 1;
     display: flex;
     justify-content: space-between;
-    transition: opacity 500ms ease-in;
-    box-shadow:  0 4px 8px 0 rgba(228, 220, 220, 0.342), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #namefont{
     font-family: 'Agustina Regular';
-    /* font-size: 20px; */
-    /* padding: 0px 20px; */
     color: beige;
 }
 .headerName {
@@ -48,12 +44,12 @@
 
 @media(max-width: 980px) {
     .App {
-        width: 100%;
         background: #5c5874c9;
-        position: absolute;
-        display: table-column;
+        /* width: auto; */
+        /* position: static; */
+        display: inline-table;
         /* justify-content: right; */
-        transition: opacity 500ms ease-in
+        /* transition: opacity 500ms ease-in */
     }
     .headerName {
         font-size: 20px;
@@ -82,3 +78,82 @@
         cursor: pointer;
     }
 }
+
+.skill {
+    background-color: rgba(255, 255, 255, 0.881);
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillHeading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: black;
+    padding-top: 20px;
+}
+
+.skillEM {
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.skillCardMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin-top: 26px;
+}
+
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 4%;
+}
+
+.skillCardImg {
+    background-color: #c8c4cf;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.skillImg {
+    height: 80px;
+    padding: 12px;
+}
+
+.skillCardName {
+    font-size: 24px;
+    font-weight: bold;
+    /* margin: 10px; */
+    text-align: center;
+
+}
+
+.skillCardDetail {
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
+    font-family: Times, serif;
+}
+
+@media screen and (max-width: 740px) {
+    .skillCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin: 12% 5%;
+        transition: 1s;
+    }
+    
+}
+
