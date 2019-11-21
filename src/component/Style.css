@@ -79,6 +79,15 @@
     }
 }
 
+@media(max-width: 370px) {
+    .headerName {
+        font-size: 18px;
+        padding: 0px 12px;
+        color: beige;
+    }
+    
+}
+
 /* skill component */
 
 .skill {
@@ -89,6 +98,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px
 }
 
 .skillHeading {
@@ -103,6 +113,8 @@
     color: rgb(49, 49, 49);
     font-size: 20px;
     margin-top: 5px;
+    width: 90%;
+    text-align: center;
 }
 
 .skillCardMain {
@@ -159,6 +171,14 @@
     
 }
 
+@media screen and (max-width: 370px) {
+    .skillEM {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
 /* About component  */
 
 .about {
@@ -169,6 +189,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 30px 0px;
 }
 
 .aboutHeading {
@@ -212,4 +233,42 @@
     text-align: center;
     font-size: 18px;
     color: lightgrey;
+}
+
+/* social */
+
+.social {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.socialIcon {
+    width: 36px;
+    height: 36px;
+    margin: 7px 8px 7px 12px;
+}
+
+.socialIcon:hover {
+    cursor: pointer;
+    transition: .2s;
+    transform: scale(1.2);
+    overflow: hidden;
+    opacity: .9;
+}
+
+@media(max-width: 980px) {
+    .social {
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        cursor: pointer;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        right: 0;
+    }
 }
