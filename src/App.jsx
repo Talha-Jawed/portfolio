@@ -12,12 +12,24 @@ function App() {
   return (
     <div className='main'>
       <Social />
-      <Header />
-      <Skill />
-      <About />
-      <GithubRepoCard />
-      <Achievements />
-      <Contact />
+      <a id='#'>
+        <Header />
+      </a>
+      <a id='Skill'>
+        <Skill />
+      </a>
+      <a id='About'>
+        <About />
+      </a>
+      <a id='openSource'>
+        <GithubRepoCard />
+      </a>
+      <a id="Achievement">
+        <Achievements />
+      </a>
+      <a id="Contact">
+        <Contact />
+      </a>
     </div>
   );
 }

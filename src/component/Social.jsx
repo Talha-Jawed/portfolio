@@ -19,22 +19,22 @@ class Social extends Component {
         return (
             <div className='social' >
 
-                <a href='https://www.linkedin.com/in/talha-javed-450491176/'>
+                <a href='https://www.linkedin.com/in/talha-javed-450491176/' target="_blank">
                     <img src={linkedIn} alt="linkedIn" className='socialIcon' />
                 </a>
-                <a href="https://twitter.com/talha_javed97">
+                <a href="https://twitter.com/talha_javed97" target="_blank">
                     <img src={twitter} alt="twitter" className='socialIcon' />
                 </a>
-                <a href="https://dev.to/talhajawed">
+                <a href="https://dev.to/talhajawed" target="_blank">
                     <img src={devTo} alt="devTo" className='socialIcon' />
                 </a>
-                <a href="https://www.facebook.com/talha.jawed.71">
+                <a href="https://www.facebook.com/talha.jawed.71" target="_blank">
                     <img src={fb} alt="fb" className='socialIcon' />
                 </a>
-                <a href="https://github.com/Talha-Jawed">
+                <a href="https://github.com/Talha-Jawed" target="_blank">
                     <img src={github} alt="github" className='socialIcon' />
                 </a>
-                <a href="https://www.npmjs.com/~talha-javed">
+                <a href="https://www.npmjs.com/~talha-javed" target="_blank">
                     <img src={npm} alt="npm" className='socialIcon' />
                 </a>
 
