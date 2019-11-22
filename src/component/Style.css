@@ -297,8 +297,8 @@
     justify-content: space-evenly;
     /* align-items: center; */
     /* background-color: rgba(255, 255, 255, 0.924); */
-    margin: 0px;
-
+    /* margin: 0px; */
+    
 }
 
 .projectHeading {
@@ -311,8 +311,9 @@
 }
 
 .repo-card-div {
+    margin-bottom: 20px;
     color: rgb(88, 96, 105);
-    background-color: rgba(255, 255, 255, 0.924);
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px -15px;
     padding: 2rem;
     cursor: pointer;
@@ -398,12 +399,14 @@
     cursor: pointer;
     border-radius: 6px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 20px -5px;
+
 }
 
 .gitBtn:hover {
     color: rgb(88, 96, 105);
     background-color: rgba(255, 255, 255, 0.924);
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 30px -15px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 30px -15px;
     color: black;
 
 }
@@ -443,4 +446,135 @@
         padding: 4px;
     }
 
+}
+
+/* Achievements And Certifications */
+
+.Achievements {
+    width: 100%;
+    background: #5c5874ea;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 90px;
+    
+}
+
+.AchievementsHeading {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 60px 0px;
+    color: white;
+}
+
+.AchievementsMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}
+
+.AchievementsCard {
+    width: 30%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.AchievementsCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 15px 5px;
+}
+
+.AchievementsImages {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.AchievementsCardBtn {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.viewBtn {
+    width: 30%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.viewBtn:hover {
+    background-color: #5c5874ce;
+    color: white;
+}
+
+@media(max-width: 1050px) {
+    .AchievementsCard {
+        width: 40%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        border-radius: 6px;
+        transition: 1s;
+    }
+    .AchievementsImages {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 800px) {
+    .AchievementsCard {
+        width: 70%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 16px 0px;
+        border-radius: 6px;
+    }
+
+    .AchievementsImages {
+        height: 290px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .AchievementsHeading {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 60px 0px;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .AchievementsCard {
+        width: 80%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 16px 0px;
+        border-radius: 6px;
+    }
+
+    .AchievementsImages {
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    
 }

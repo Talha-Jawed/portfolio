@@ -5,6 +5,7 @@ import Skill from './component/Skill';
 import About from './component/About';
 import Social from './component/Social';
 import GithubRepoCard from './component/Projects';
+import Achievements from './component/Achievements';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skill />
       <About />
       <GithubRepoCard />
+      <Achievements />
     </div>
   );
 }
