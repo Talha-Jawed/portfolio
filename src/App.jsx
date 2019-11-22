@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './component/Header'
+import Header from './component/Header';
 import Skill from './component/Skill';
 import About from './component/About';
 import Social from './component/Social';
 import GithubRepoCard from './component/Projects';
 import Achievements from './component/Achievements';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <GithubRepoCard />
       <Achievements />
+      <Contact />
     </div>
   );
 }

@@ -575,6 +575,36 @@
         width: 100%;
         overflow: hidden;
     }
+    
+    
+}
 
+/* contact */
+
+.contact {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.made {
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    padding: 100px 0px 0px 0px;
+    width: 90%;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    
+    .contact {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+        color: black;
+        text-align: center;
+    }
     
 }
