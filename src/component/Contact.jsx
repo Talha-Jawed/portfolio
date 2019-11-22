@@ -15,8 +15,8 @@ class Contact extends Component {
                 <p className='skillHeading'>CONTACT</p>
                 <em className='skillEM'>Have a question or want to work together?</em>
                 <div style={{ marginTop: '60px' }}>
-                    <p className='contact'>WhatsApp: +92 306 2709986</p>
-                    <p className='contact'>Email: jawedtalha0@gmail.com</p>
+                    <p className='contact'>{'WhatsApp: '}<span style={{ color: '#266cde' }}>+92 306 2709986</span></p>
+                    <p className='contact'>{'Email: '}<span style={{ color: '#266cde' }}>jawedtalha0@gmail.com</span> </p>
                 </div>
                 <em className='made'>Made with ❤️ by Talha Javed</em>
 

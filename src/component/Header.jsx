@@ -14,7 +14,6 @@ class WebHeader extends Component {
   }
   render() {
     const { clickMenu } = this.state
-    console.log('=====')
     return (
       <div className="App" >
         <div className='logoName'>
@@ -25,7 +24,7 @@ class WebHeader extends Component {
         <div className={clickMenu ? 'menuLine' : 'rightSide'} >
           
           <p className='headerName'>{"Skills"}</p>
-          <p className='headerName'>{"Projects"}</p>
+          <p className='headerName'>{"About"}</p>
           <p className='headerName'>{"Open Source"}</p>
           <p className='headerName'>{"Achivements"}</p>
           <p className='headerName'>{"Contact Me"}</p>

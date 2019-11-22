@@ -18,7 +18,7 @@ class About extends Component {
                     <img src={image} className='profileImage' alt='logo' />
                 </div>
                 <p className='name'>Talha Javed</p>
-                <em className='languges'>React | React Native</em>
+                <em className='languges'>MERN Stack Developer</em>
                 <p className='aboutDetail'>
                     A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / React Native / Nodejs / Firebase / MongooDB and some other cool libraries and frameworks .
                 </p>
