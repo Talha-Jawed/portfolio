@@ -4,6 +4,7 @@ import mobImg from '../assets/mobile.png'
 import apiImg from '../assets/api.png'
 import databaseImg from '../assets/databas.png'
 import cloudImg from '../assets/cloud.png'
+import { Spring } from 'react-spring/renderprops'
 import './Style.css';
 
 class Skill extends Component {
@@ -42,26 +43,33 @@ class Skill extends Component {
     render() {
         const { arr } = this.state;
         return (
-            <div className='skill'>
-                <p className='skillHeading'>WHAT I DO</p>
-                <em className='skillEM'>Things I'm skilled at and passionate about.</em>
-                <div className='skillCardMain'>
-                    {arr && arr.map((item, index) => {
-                        return (
-                            <div className='skillCard' key={index}>
-                                <div className='skillCardImg'>
-                                    <img src={item.image} className='skillImg' />
+            <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+            >{props => (
+                <div className='skill' style={props}>
+                    <p className='skillHeading'>WHAT I DO</p>
+                    <em className='skillEM'>Things I'm skilled at and passionate about.</em>
+                    <div className='skillCardMain' >
+                        {arr && arr.map((item, index) => {
+                            return (
+                                <div className='skillCard' key={index} >
+                                    <div className='skillCardImg'>
+                                        <img src={item.image} className='skillImg' />
+                                    </div>
+                                    <p className='skillCardName'>{item.name}</p>
+                                    <div>
+                                        <p className='skillCardDetail'>{item.detail}</p>
+                                    </div>
                                 </div>
-                                <p className='skillCardName'>{item.name}</p>
-                                <div>
-                                    <p className='skillCardDetail'>{item.detail}</p>
-                                </div>
-                            </div>
-                        )
-                    })
-                    }
+                            )
+                        })
+                        }
+                    </div>
                 </div>
-            </div>
+            )}
+
+            </Spring>
         );
     }
 }
